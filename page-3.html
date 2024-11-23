@@ -1,0 +1,318 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="second_logo-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Damiqueen Footwears | Ecommerce Products Ofiicial Page</title>
+</head>
+
+<style>
+    .container{
+        background: #380f17!important;
+    }
+    .small-container{
+        margin-top: 10px!;
+    }
+    .navbar{
+        background: var(--damisile) ;
+        margin-bottom: 1px;
+    }
+    nav ul li a:hover, .navbar .active {
+        color: #ff523b;
+    }
+    .page-btn a span:hover, .page-btn a .active-btn{
+        background: #ff523b;
+        color: #fff;
+    }
+    img:nth-child(odd):hover{
+    transform: rotate(5deg);
+    }
+    img:hover{
+        transform: rotate(-5deg);
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="second_logo-removebg-preview.png" width="125px" class="animate"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="carts.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Sandals</option>
+                <option>Shoes</option>
+
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="Product (25).jpg" class="product">
+                <h3>Executive Elite Shoe</h3>
+                <div class="rating">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                </div>
+                <p>$18.50</p>
+        <!-- Add to Cart Button with data attributes -->
+        <button class="add-to-cart" onclick="addToCart('Executive Elite Shoe', 18.50, 'Product (25).jpg'), alert('Executive Elite Shoe has been added to your cart!');">Add to Cart</button>        
+            </div> 
+
+
+            <div class="col-4">
+                <img  src="WhatsApp-Image-2021-02-19-at-5.51.58-PM-1.jpeg" class="product">
+                <h3>Casual Stride Half Shoe</h3>
+                <div class="rating">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="half-star.png" width="18px" height="18px">
+                </div>
+                <p>$12.00</p>
+            <!-- Add to Cart Button with data attributes -->
+            <button class="add-to-cart" onclick="addToCart('Casual Stride Half Shoe', 12.00, 'WhatsApp-Image-2021-02-19-at-5.51.58-PM-1.jpeg'), alert('Casual Stride Half Shoe has been added to your cart!');">Add to Cart</button>        
+            </div>
+
+
+
+            <div class="col-4">
+                <img src="FB_IMG_16669755140609391.jpg" class="product">
+                <h3>Packing Stalk Palm</h3>
+                <div class="rating">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                </div>
+                <p>$10.50</p>
+          <!-- Add to Cart Button with data attributes -->
+            <button class="add-to-cart" onclick="addToCart('Packing stalk palm', 10.50, 'FB_IMG_16669755140609391.jpg'), alert('Packing Stalk palm has been added to your cart!');">Add to Cart</button>        
+            </div>
+
+            <div class="col-4">
+                <img src="Product (33).jpg" class="product">
+                <h3>Safari Comfort Palm</h3>
+                <div class="rating">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                </div>
+                <p>$8.00</p>
+          <!-- Add to Cart Button with data attributes -->
+            <button class="add-to-cart" onclick="addToCart('Safari Comfort Palm', 8.00, 'Product (33).jpg'), alert('Safari Comfort Palm has been added to your cart!');">Add to Cart</button>        
+            </div>
+
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="FB_IMG_16669750550092112.jpg" class="product">
+                    <h3> Corporate Clogs </h3>
+                    <div class="rating">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                    </div>
+                    <p>$9.00</p>
+    <!-- Add to Cart Button with data attributes -->
+    <button class="add-to-cart" onclick="addToCart('Corporate clogs', 9.00, 'FB_IMG_16669750550092112.jpg'), alert('Coporate Clogs has been has been added to your cart!');">Add to Cart</button>        
+                </div>
+
+
+                <div class="col-4">
+                    <img src="FB_IMG_16667401295371913.jpg" class="product">
+                    <h3>Serene Steps Palm</h3>
+                    <div class="rating">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="half-star.png" width="18px" height="18px">
+                    </div>
+                    <p>$6.50</p>
+            <!-- Add to Cart Button with data attributes -->
+            <button class="add-to-cart" onclick="addToCart('Serene Steps Palm', 6.50, 'FB_IMG_16667401295371913.jpg'), alert('Serene Steps Palm has been has been added to your cart!');">Add to Cart</button>        
+                </div>
+
+
+                <div class="col-4">
+                    <img src="Daznico-Slippers-for-Women-Spring-And-Summer-Women-Slippers-Flat-Solid-Color-Casual-Style-Seaside-Beach-Shoes-Coffee-10_5b38a61b-1fbe-42ce-957b-de8355891ecf.609b5f3b317dcee65bcab0aeb2a7a460.jpeg" class="product">
+                    <h3>Chic Stiletto Hermes</h3>
+                    <div class="rating">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                    </div>
+                    <p>$7.50</p>
+    <!-- Add to Cart Button with data attributes -->
+    <button class="add-to-cart" onclick="addToCart('Chic stilleto Hermes ', 7.50, 'Daznico-Slippers-for-Women-Spring-And-Summer-Women-Slippers-Flat-Solid-Color-Casual-Style-Seaside-Beach-Shoes-Coffee-10_5b38a61b-1fbe-42ce-957b-de8355891ecf.609b5f3b317dcee65bcab0aeb2a7a460.jpeg'), alert('Chic stilleto Hermes has been added to your cart!');">Add to Cart</button>        
+
+                </div>
+
+                <div class="col-4">
+                    <img src="Product (1).jpg" class="product">
+                    <h3>Corporate Luxe Slide Palm</h3>
+                    <div class="rating">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="star.png" width="18px" height="18px">
+                        <img src="half-star.png" width="18px" height="18px">
+                    </div>
+                    <p>$9.00</p>
+    <!-- Add to Cart Button with data attributes -->
+    <button class="add-to-cart" onclick="addToCart('Corporate Luxe slide Palm', 9.00, 'Product (1). jpg'), alert('Corporate Luxe SLide palm has been added to your cart!');">Add to Cart</button>        
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+<center>
+        <div class="page-btn">
+            <a href="products.html" ><span>1</span></a>
+            <a href="page-2.html"><span >2</span></a>
+            <a href="#"><span class="active-btn">3</span></a>
+            <a href="page-2.html"><span >←</span></a>
+        </div>
+</center>
+    </div>
+
+    <marquee behaviour="" direction="left"><span class="moving">Damiqueen Footwears:</span> More Than Just Shoe, its a Statement</marquee>
+     <!-- Footer -->
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://playstore.com"><img src="play-store.png"></a>
+                        <a href="https://appstore.com"><img src="app-store.png"></a>
+
+                    </div>
+                </div>
+                <!-- <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fab fa-home"></i></a></li>
+                        <li><a href="products.html"><i class="fab fa-product"></i></a></li>
+                        <li><a href="account.html"><i class="fab fa-account"></i></a></li>
+                        <li><a href="order.html" ><i class="fab fa-order"></i></a></li>
+                        <li><a href="carts.html" ><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook/itzz damiqueen.com" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i> Damiqueen Footwears
+                        </a> <br>
+                        <a href="https://www.instagram/itzz damiqueen.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>Damiqueen Footwears
+                        </a><br>
+                        <a href="https://twitter/itzz damiqueen.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>Damiqueen Footwears
+                        </a><br>
+                        <a href="https://www.linkedin/itzz damiqueen.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i> Damiqueen Footwears
+                        </a><br>
+                    </ul>
+                </div>
+            </div>
+            <center><a href="#" class="btn" id="back-to-top">Back to top ↑</a> </center>
+            <hr>
+            <p class="copyright" >Copyright 2024 - damiqueen footwears </p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    // some javascript on how the cart page will work
+
+            // Function to add product to the cart
+            function addToCart(productName, productPrice, productImage) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ name: productName, price: productPrice, image: productImage, quantity: 1 });
+            }
+
+            // Save updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Show confirmation message
+            showMessage(`${productName} has been added to your cart!`);
+            }
+
+            // Function to show a temporary message
+            function showMessage(message) {
+            const messageBox = document.createElement('div');
+            messageBox.className = 'message-box';
+            messageBox.innerText = message;
+            document.body.appendChild(messageBox);
+
+            setTimeout(() => {
+                messageBox.remove();
+            }, 2000); // Message disappears after 2 seconds
+            }
+    </script>
+
+</body>
+
+</html>

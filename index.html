@@ -1,0 +1,412 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="second_logo-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Damiqueen Footwears | Ecommerce website Design</title>
+</head>
+<!-- Some Peculiar Css to this page -->
+<style>
+.my-own p{
+    font-family: cursive;
+}
+.testimonial p{
+    font-size: medium!important;
+    /* display: flex; */
+}
+button{
+    padding: 10px 15px;
+    background: #132c47;
+    border: 0cap;
+    box-shadow: 4px 4px 4px #78aead;
+    border-radius: 7px;
+    color: #d4ece9;
+    animation: 3s linear 0s 1 running getBigger;
+}
+button:hover{
+    color: #132c47;
+    background: transparent;
+    border: 1px solid #132c47;
+}
+
+/* .row{
+    flex-basis: 60%;
+} */
+nav ul li a:hover, .navbar .active {
+    color: #ff523b;
+}
+.small-container:nth-child(2), .small-container:nth-child(4){
+    max-width: 1600px;
+}
+@media only screen and (max-width: 800px){
+.testimonial p{
+    font-size: large;
+    }
+}
+.small-container h3{
+    margin-bottom: 10px!important;
+}
+img:nth-child(even):hover{
+    transform: rotate(5deg);
+}
+img:hover{
+    transform: rotate(-5deg);
+}
+.col-2 p{
+    color: whitesmoke!important;
+}
+
+/* nav ul #menuitems:nth-child(1){
+    animation-delay: 0s;
+}
+nav ul #menuitems:nth-child(2){
+    animation-delay: 1s;
+}
+nav ul #menuitems:nth-child(3){
+    animation-delay: 2s;
+}
+nav ul #menuitems:nth-child(4){
+    animation-delay: 3s;
+}
+nav ul #menuitems{
+    animation: fallDown;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-play-state: running;
+} */
+</style>
+<body>
+<!-- The Navigation of page -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="second_logo-removebg-preview.png" width="100px" class="animate"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html" >Products</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href= "account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="carts.html"><img src="cart.png" width="30px" height="30px" class="active"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    
+<!-- First Content -->
+<style>
+    .row:first-child{
+        margin-top: 30px!important;
+        margin-bottom: 30px!important;
+    }
+</style>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Damiqueen Footwears</h1>
+                    <h3>
+                        Every Day for new designs!
+                    </h3>
+                    <p class="my-own">
+                        Your are addressed the way you are dressed,
+                         <i>order our shoes now
+                            and treat your foot in the best manners!</i>
+                    </p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="Background-removebg.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Product Categories-->
+    <div class="small-container">
+
+        <div>
+            <h2 class="title">Featured Products</h2>  
+        </div>
+<h3> Click each section to view &nbsp; collection </h3>
+        <div class="row">
+            <div class="col-4">
+                <a href="products-details.html"><img src="Product (10).jpg" class="product"></a>
+                <h3>Half Shoes</h3>
+                <div class="rating">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px">
+                    <img src="star.png" width="18px" height="18px" >
+                    <img src="star.png" width="18px" height="18px">
+                <del><p>$13.00</p></del>
+                <p>$12.80</p>
+            </div>
+        </div>
+
+
+        <div class="col-4"><a href="product-details-2.html"><img src="Product (27).jpg" class="product"></a>
+            <h3>Palms</h3>
+            <div class="rating">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="half-star.png" width="18px" height="18px">
+            </div>
+            <del><p>$7.20</p></del>
+            <p>$6.80</p>
+        </div>
+
+
+        <div class="col-4">
+            <a href="product-details-3.html"><img src="Product (2).jpeg" class="product"></a>
+            <h3>Corporate Shoes</h3>
+            <div class="rating">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+            </div>
+            <del><p>$19.20</p></del>
+            <p>$18.80</p>
+        </div>
+
+            
+        <div class="col-4">
+            <a href="Product-details-4.html"> <img src="Product (15).jpg"  class="product"> </a>
+            <h3> Sandals </h3>
+            <div class="rating">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="star.png" width="18px" height="18px">
+                <img src="half-star.png" width="18px" height="18px">
+            </div>
+            <del><p>$7.50</p></del>
+            <p>$7.00</p>
+        </div>
+
+        <!--Exclusive Offer -->
+
+
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Exclusive_product-removebg-preview.png" class="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available on Damiqueen Footwears</p>
+                        <h1>Nike Model 10 Trainers</h1>
+                        <small>A corporate and exqusite model 
+                            of trainers, that gives you
+                             unlimited comfort while treating your foot
+                              in the best manners.
+                            Give your foot what it worths!!
+                            Order this Master-piece and 
+                            walk the talk with Damiqueen 
+                             </small>  <br>
+      <!-- Add to Cart Button with data attributes -->
+             <center>  <br> <button class="add-to-cart" onclick="addToCart('Nike Model 10 trainers', 20.00, 'Exclusive product.jpg'), alert('Nike Model 10 Trainers has been added to your cart!');">Buy Now &#8594;</button>  </center>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Testmonial -->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="quote.png" class="quote">
+                        <p>I recently made a purchase from this website and I must say, I'm very impressed with my shopping experience!</p>
+                        <div class="rating">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="half-star.png" width="18px" height="18px">
+                        </div>
+                        <img src="phil.jpg" class="user-img">
+                        <h3>Ayoola Damisile</h3>
+                    </div>
+                    <div class="col-3">
+                        <img src="quote.png" class="quote">
+                        <p>The website was easy to navigate and the checkout process was smooth and hassle-free. The product arrived quickly and was exactly as described.</p>
+                        <div class="rating">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="half-star.png" width="18px" height="18px">
+                        </div>
+                        <img src="Damiprince Romeo.jpg" class="user-img">
+                        <h3>Damiprince Romeo</h3>
+                    </div>
+                    <div class="col-3">
+                        <img src="quote.png" class="quote">
+                        <p>The quality of the product was excellent and I couldn't be happier with my purchase. I also appreciate the great customer service provided by the team.</p>
+                        <div class="rating">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="star.png" width="18px" height="18px">
+                            <img src="half-star.png" width="18px" height="18px">
+                        </div>
+                        <img src="user-3.png" class="user-img">
+                        <h3>Princess Dami</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands Sponsor -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="https://godreg.com"><img src="logo-godrej.png"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://oppo.com"><img src="logo-oppo.png"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://coca-cola.com"><img src="logo-coca-cola.png"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://paypal.com"><img src="logo-paypal.png"> </a>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://philips.com"><img src="logo-philips.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<marquee behaviour="" direction="left"><span class="moving">Damiqueen Footwears:</span> The Perfect Blend Of Fashion And Function </marquee>
+         <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <a href="https://playstore.com"><img src="play-store.png"></a>
+                        <a href="https://appstore.com"><img src="app-store.png"></a>
+
+                    </div>
+                </div>
+                <!-- <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fab fa-home"></i></a></li>
+                        <li><a href="products.html"><i class="fab fa-product"></i></a></li>
+                        <li><a href="account.html"><i class="fab fa-account"></i></a></li>
+                        <li><a href="order.html" ><i class="fab fa-order"></i></a></li>
+                        <li><a href="carts.html" ><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook/itzz damiqueen.com" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i> Damiqueen Footwears
+                        </a> <br>
+                        <a href="https://www.instagram/itzz damiqueen.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>Damiqueen Footwears
+                        </a><br>
+                        <a href="https://twitter/itzz damiqueen.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>Damiqueen Footwears
+                        </a><br>
+                        <a href="https://www.linkedin/itzz damiqueen.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i> Damiqueen Footwears
+                        </a><br>
+                    </ul>
+                </div>
+            </div>
+            <center><a href="#" class="btn" id="back-to-top">Back to top ↑</a> </center>
+            <hr>
+            <p class="copyright" >Copyright 2024 - damiqueen footwears </p>
+        </div>
+    </div>
+
+        <!-- javascript for toggle menu -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+    
+            MenuItems.style.maxHeight = "0px";
+    
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+
+// javascript for the add to cart functionality
+            
+            // Add to Cart Function
+            function addToCart(productName, productPrice) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+                // Check if the product is already in the cart
+                const existingProduct = cart.find(item => item.name === productName);
+                if (existingProduct) {
+                    existingProduct.quantity++;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+            }
+               // some javascript on how the cart page will work
+
+            // Function to add product to the cart
+            function addToCart(productName, productPrice, productImage) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ name: productName, price: productPrice, image: productImage, quantity: 1 });
+            }
+
+            // Save updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Show confirmation message
+            showMessage(`${productName} has been added to your cart!`);
+            }
+
+            // Function to show a temporary message
+            function showMessage(message) {
+            const messageBox = document.createElement('div');
+            messageBox.className = 'message-box';
+            messageBox.innerText = message;
+            document.body.appendChild(messageBox);
+
+            setTimeout(() => {
+                messageBox.remove();
+            }, 2000); // Message disappears after 2 seconds
+            }
+        </script>
+
+</body>
+
+</html>
